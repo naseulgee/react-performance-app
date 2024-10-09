@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+<!-- start: ================================================================ -->
+# [참고] VSCode Settings
+<details>
+<summary>접기/펼치기</summary>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Extensions
+- ES7+ React/Redux/React-Native snippets
+- Tailwind CSS IntelliSense
+- Prettier
+- Auto Close Tag
+- Auto Rename Tag
+- Dracula Official
+- ESLint (**v2.2.2**)
+- HTML CSS Support
+- HTML Snippets
+- indent-rainbow
+- TODO Highlight
 
-## Available Scripts
+## 설정 파일 생성 및 내용 입력
+- ./vscode/**파일명.code-snippets** : 코드 자동완성 단축키 설정 파일
+- ./vscode/**settings.json** : 작업 환경 설정 파일
+</details>
+<!-- end  : ================================================================ -->
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- start: ================================================================ -->
+# [참고] Git
+<details>
+<summary>접기/펼치기</summary>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+git init
+git remote add origin 저장소주소
+git pull origin 저장소주소
+git status
+git add .
+git status
+git commit -m "메세지"
+git push origin master
+```
+</details>
+<!-- end  : ================================================================ -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<!-- start: ================================================================ -->
+# React 프로젝트 세팅
+<details>
+<summary>접기/펼치기</summary>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 패키지 설치 및 세팅
+```
+npx create-react-app 경로/어플명
+npm i -D postcss autoprefixer
+npm i -D prettier eslint eslint-plugin-react eslint-plugin-prettier eslint-config-prettier
+```
+1. 프로젝트 생성
+2. CSS 를 위한 패키지 설치
+    - postcss
+        : css 파일의 후처리를 도와줌
+    - autoprefixer
+        : 접근성을 위한 접두사를 붙여줌
+3. 문법 교정과 코드 포맷팅을 위한 패키지 설치
+    - prettier
+        : 코드 포맷팅
+    - eslint
+        : 문법 교정
+    - eslint-plugin-react
+    - eslint-plugin-prettier
+    - eslint-config-prettier
+        : eslint와 prettier 간 포맷팅 충돌이 발생할 수 있는 rule을 해제
 
-### `npm run build`
+### [옵션] 추가 패키지 설치 및 세팅
+```
+npm i -D tailwindcss prettier prettier-plugin-tailwindcss
+npm i react-icons
+```
+1. tailwindcss 패키지 설치
+    - tailwindcss
+        : 클래스명 선언 방식으로 사용 가능
+        : 리액트에서 bootstrap 사용 시, 스타일 컴포넌트 추가 방식으로 사용해야 함으로 불편함
+    - prettier
+        : 코드 포멧팅
+    - prettier-plugin-tailwindcss
+        : prettier 가 코드 포맷팅 시 tailwindcss 유틸리티 클래스를 지정된 기준에 따라 알파벳 순서로 자동 정렬
+2. icon 패키지 설치
+    - react-icons
+        : FontAwesome 을 포함해 여러 아이콘 라이브러리를 제공하는 패키지
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 기본 테스트를 위한 파일 및 폴더 생성
+1. src/assets/images
+3. src/components/index.js
+4. src/pages/index.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 설정 파일 생성
+1. jsconfig.json
+2. postcss.config.js
+3. tailwind.config.js
+4. .prettierrc
+4. .prettierignore
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 파일 내용 수정
+1. /src/index.css
+</details>
+<!-- end  : ================================================================ -->
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- start: ================================================================ -->
+# 🚀 배포
+<details open>
+<summary>접기/펼치기</summary>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 패키지 설치 및 세팅
+```
+npm i -D gh-pages
+```
+1. 깃헙에서 SPA 배포를 위한 패이지
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 설정 파일 수정
+1. package.json 파일 내용 수정
+```
+....
+"homepage": "https://깃헙유저명.github.io/저장소명/",
+"scripts": {
+    ....
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+},
+```
+## Github 배포
+1. 수정사항 모두 push
+2. `npm run deploy` 실행
+3. homepage 에 입력한 주소 접근하여 배포여부 확인
+</details>
+<!-- end  : ================================================================ -->

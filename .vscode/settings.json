@@ -1,0 +1,37 @@
+{
+    "workbench.colorTheme": "Dracula",
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    //TODO 세팅
+    "todohighlight.keywords": [
+        {
+            "text": "NOTE:",
+            "color": "#ffffff",
+            "backgroundColor": "deepskyblue",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "Vue:",
+            "color": "#ffffff",
+            "backgroundColor": "#42b883",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "Nuxt:",
+            "color": "#ffffff",
+            "backgroundColor": "#126842",
+            "overviewRulerColor": "grey"
+        },
+        {
+            "text": "★",
+            "color": "red",
+            "backgroundColor": "yellow",
+            "overviewRulerColor": "grey"
+        }
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+}
