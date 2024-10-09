@@ -1,12 +1,12 @@
-/** NOTE: 여러 컴포넌트로 나눠준 예시 */
+/** NOTE: B 컴포넌트에서 성능개선을 한 예시 */
 
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const B = ({ message, todos }) => {
+const C = ({ message, todos }) => {
   return (
     <article className='w-full'>
-      <h1 className='text-3xl'>B Component</h1>
+      <h1 className='text-3xl'>C Component</h1>
       <p className='my-5'>{message}</p>
       <List todos={todos} />
     </article>
@@ -28,11 +28,11 @@ const Item = ({ todo }) => {
   return (
     <li>
       <label
-        htmlFor={'B_' + todo.id}
+        htmlFor={'C_' + todo.id}
         className='mb-2 block w-full rounded-md bg-gray-50 p-2 shadow-xl'>
         <input
           type='checkbox'
-          id={'B_' + todo.id}
+          id={'C_' + todo.id}
           name='todo'
           className='me-2'
         />
@@ -42,7 +42,7 @@ const Item = ({ todo }) => {
   )
 }
 
-B.propTypes = {
+C.propTypes = {
   message: PropTypes.string,
   todos: PropTypes.array
 }
@@ -53,4 +53,4 @@ Item.propTypes = {
   todo: PropTypes.object
 }
 
-export default B
+export default C
