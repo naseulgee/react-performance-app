@@ -3,6 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/** NOTE: B 문제 발생: 재사용성과 렌더링 최적화를 위해서 컴포넌트를 분할하였으나, Message 업데이트 시 하위의 컴포넌트도 같이 재렌더링 됨 */
 const B = ({ message, todos }) => {
   return (
     <article className='w-full'>
