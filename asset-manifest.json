@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-performance-app/static/css/main.6153bc7f.css",
+    "main.js": "/react-performance-app/static/js/main.d0558917.js",
+    "index.html": "/react-performance-app/index.html",
+    "main.6153bc7f.css.map": "/react-performance-app/static/css/main.6153bc7f.css.map",
+    "main.d0558917.js.map": "/react-performance-app/static/js/main.d0558917.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6153bc7f.css",
+    "static/js/main.d0558917.js"
+  ]
+}
