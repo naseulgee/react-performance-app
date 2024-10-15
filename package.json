@@ -1,8 +1,8 @@
 {
-  "name": "react-budget--app",
+  "name": "react-performance-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://naseulgee.github.io/react-budget-app/",
+  "homepage": "https://naseulgee.github.io/react-performance-app/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
